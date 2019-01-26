@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:target::before {
+    /* TEMPORARY NAVBAR FIX*/
+    content: "";
+    display: block;
+    height: 70px;
+    /* fixed header height*/
+    margin: -80px 0 0;
+    /* negative fixed header height */
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+html{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+/* END GLOBAL
+=================*/
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Roboto', arial;
+}
+
+header {
+    display: flex;
+    min-height: 50px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header ul {
+    float: right;
+}
+
+#logo {
+    float: left;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+header ul li {
+    padding: 0 0.5em 0 0;
+    text-transform: uppercase;
+    float: left;
+    margin-top: 0.8em;
+    font-family: 'Roboto', arial;
+}
+
+header ul li a {
+    color: white;
+    font-size: 0.8em;
+}
+
+@media (max-width: 700px) {
+    #logo {
+        text-align: center;
+    }
+}
+
+
+#home {
+    background: url(../imgs/server_room_blurred_dark.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*need media query here to fix vertical responsiveness*/
+
+@media (max-height: 750px) {
+    #home {
+        height: 750px;
+    }
+}
+
+#home h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    width: 60vmin;
+    font-family: 'Oswald', sans-serif;
+}
+
+#home p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    width: 80vmin;
+    text-align: center;
+}
+
+#btn {
+    text-align: center;
+    margin-top: 45px;
+    padding: 15px;
+    width: 50px;
+    border: 4px white solid;
+    font-size: 2.8rem;
+    border-radius: 80px;
+    color: white;
+}
+
+#btn:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: crimson;
+    border-color: crimson;
+}
+
+header a:hover {
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+    padding: 5px 0px;
+    font-weight: 600
+}
+
+/*END LANDING
+=================*/
+
+#sectionA-bg {
+    background-color: #FFF;
+}
+
+.sectionA {
+    display: flex;
+    justify-content: center;
+}
+
+#sectionA1 {
+    height: 100vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 100%;
+}
+
+#sectionA1 h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+#sectionA1 #sbu {
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#sectionA1 h2 {
+    width: 100px;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    border-bottom: 3px red solid;
+    padding: 10px 0px 5px 0px;
+}
+
+#sectionA1 p {
+    text-align: justify;
+    padding-top: 10px;
+}
+
+@media (max-height: 700px) {
+    #sectionA1 {
+        height: 700px;
+    }
+}
+
+/* END ABOUT 
+=================*/
+
+#sectionB-bg {
+    background-color: #F8F8F8;
+    padding: 100px 0px;
+}
+
+#sectionB {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100%;
+}
+
+#sectionB-bg h1 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.card {
+    flex: 1 0 21%;
+    width: 250px;
+    height: 300px;
+    background-color: #FFF;
+    border-radius: 15px 15px 5px 5px;
+    position: relative;
+    margin: 20px 30px 0px 30px;
+}
+
+.card:hover{
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card .top {
+    width: 362px;
+    height: 200px;
+    background-color: #990000;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: solid #6B000D;
+    overflow: hidden;
+    
+}
+
+.card .top .pfp {                       /*Need pfp to be 363px by 200px (WxH)*/
+    border-radius: 10px 10px 0px 0px;
+    min-width: 200px;
+    min-height: 100%;
+    
+    width: 100%;
+    height: auto;
+}
+
+.card .bottom {
+    text-align: center;
+    padding: 20px 40px;
+}
+
+
+.card .name {
+    font-family: 'Oswald', sans-serif;
+    border-bottom: 3px solid #990000;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.card .title {
+    color: #808080;
+}
+
+
+/*END OFFICERS
+=================*/
+
+.sectionC {
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sectionC .event-header {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.sectionC .calendar-container {
+    text-align: center;
+}
+
+@media (max-width: 1000px) {            /* responsiveness for iframes*/
+    .sectionC .calendar-container {     /* container allows for resizing*/
+        position: relative;
+        height: 0;
+        padding-bottom: 75%;            /* value is chosen by aspect ratio*/
+        overflow: hidden;
+    }
+
+    .sectionC .calendar-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+
+
+/*END EVENTS
+=================*/
+
+#sectionLast-bg {
+    background-color: #990000
+}
+
+.sectionLast {
+    padding-bottom: 100px;
+}
+
+.sectionLast h1 {
+    margin-top: 150px;
+    margin-bottom: 10px;
+    color: white;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.sectionLast .socialmedia {
+    border-radius: 30px;
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: #6B000D;
+}
+
+.sectionLast i {
+    padding: 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.sectionLast .contact-header {
+    margin-top: 100px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+
+.sectionLast .info {
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionLast .location {
+    margin-top: 5px;
+    padding-left: 60px;
+}
+
+.sectionLast .email {
+    color: white;
+    padding-left: 30px;
+}
+
+.sectionLast .email .fas {
+    font-size: 1em;
+}
+
+.sectionLast a:hover {
+    font-weight: 600;
+}
