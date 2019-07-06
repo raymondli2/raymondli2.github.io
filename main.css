@@ -111,16 +111,17 @@ header ul li a:hover{
 /*ABOUT US*/
 
 .grid-container{
-    background-color: #000;
+    background: url(imgs/aboutus.jpg) cover no-repeat;
     height: 100vh;
     min-height: 800px;
     display: grid;
     grid-template-rows: 10% 10% 60% 20%;
+    grid-template-columns: 10% 80% 10%;
     grid-template-areas:
-        "."
-        "section-title"
-        "about"
-        "."
+        ".       .       ."
+        ". section-title ."
+        ".     about     ."
+        ".       .       ."
 }
 
 .section-title{
@@ -136,9 +137,6 @@ header ul li a:hover{
     grid-area: about;
     width: 60%;
     max-width: 600px;
-    margin-right: auto;
-    margin-left: 10%;
-    
     background-color: 
 }
 
