@@ -5,179 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:500|Overlock+SC" rel="stylesheet">
-    <link href="styles/main.css" type="text/css" rel="stylesheet">
-    <title> !!!WIP!!! IEEE Stony Brook </title>
+    <script src="https://kit.fontawesome.com/b0fee94119.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <title> Title </title>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <a href="#home">
-                <h1 id="logo">IEEE Student Branch</h1>
-            </a>
-            <ul>
-                <li><a href="#home">home</a></li>
-                <li><a href="#officers">officers</a></li>
-                <li><a href="#events">events</a></li>
-                <li><a href="#memories">memories</a></li>
-                <li><a href="#supporters">supporters</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-        </div>
-    </header>
-    <div id="flex-container">
-        <div id="home">
-            <h1>Institute of Electrical and Electronic Engineers</h1>
-            <p>
+
+    <div class="bg">
+
+        <!--NAVBAR-->
+        <nav>
+            <header>
+                <h1><a href="" class="logo">IEEE SBU</a></h1>
+                <ul>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Officers">Officers</a></li>
+                    <li><a href="#Events">Events</a></li>
+                    <li><a href="#Memories">Memories</a></li>
+                    <li><a href="#Supporters">Supporters</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </header>
+        </nav>
+
+        <div class="landing-content">
+            <h1 class="title">INSTITUTE OF ELECTRICAL AND ELECTRONIC ENGINEERS</h1>
+            <p class="desc">
                 One of the world’s largest technical professional organization bringing together members from all over the world for networking opportunities, advancement in career development, acquiring benefits, and much more.
             </p>
-            <a href="#about">
-                <h2 id="btn">
-                    <i class="fas fa-angle-double-down"></i>
-                </h2>
-            </a>
+            <div class="btn"><i class="fas fa-angle-down"></i></div>
         </div>
+    </div>
 
-        <!--END LANDING-->
+    <!-- END LANDING -->
+    <div class="container">
+        <div class="grid-container">
+            <h1 class=section-title>About IEEE</h1>
+            <div class="about">
+                <p class="subtitle">Mission</p>
+                <p class="mission-content">
+                    IEEE's core purpose is to foster technological innovation and excellence for the benefit of humanity.
+                </p>
+                <p class="subtitle">Vision</p>
+                <p class="vision-content">
+                    IEEE will be essential to the global technical community and to technical professionals everywhere, and be universally recognized for the contributions of technology and of technical professionals in improving global conditions.
+                </p>
 
-        <div id="sectionA-bg">
-            <div class="container">
-                <section class="sectionA" id="about">
-                    <section id="sectionA1">
-                        <h1 id="ieee">About IEEE</h1>
-                        <h2>Mission</h2>
-                        <p>
-                            IEEE's core purpose is to foster technological innovation and excellence for the benefit of humanity.
-                        </p>
-                        <h2>Vision</h2>
-                        <p>
-                            IEEE will be essential to the global technical community and to technical professionals everywhere, and be universally recognized for the contributions of technology and of technical professionals in improving global conditions.
-                        </p>
-                        <h1 id="sbu">About Us</h1>
-                        <p>
-                            Stony Brook IEEE student branch is an educational and well developed organization for students to pursue their dreams in becoming a well skilled professional engineer. Our goal is to spread the knowledge of theory and support undergraduate and graduate students who are interested in Electrical and Computer Science Engineering with field related resources.<br><br>We gather students and professors together in order to help members to establish a better understanding in this field and provide academic opportunities. We ensure our branch will provide you with many alternative events and workshops on campus and off campus for you to succeed in your career. We hope these activities will bring both entertainments and benefits to our members here at Stony Brook University.
-                        </p>
-                    </section>
-                </section>
+                <p class="subtitle">About Us</p>
+                <p class="aboutus-content">
+                    Stony Brook IEEE student branch is an educational and well developed organization for students to pursue their dreams in becoming a well skilled professional engineer. Our goal is to spread the knowledge of theory and support undergraduate and graduate students who are interested in Electrical and Computer Science Engineering with field related resources.
+                </p>
             </div>
         </div>
 
         <!--END ABOUT-->
 
-        <div id="sectionB-bg">
-            <div class="container" id="officers">
-                <h1> The Team </h1>
-                <section id="sectionB">
-                    <div class="card" id="president">
-                        <div class="top"> <img class="pfp" src="imgs/alwin2.jpg" alt="alwin-joseph"></div>
-                        <div class="bottom">
-                            <h4 class="name">Alwin Joseph</h4>
-                            <p class="title">President</p>
-                        </div>
-                    </div>
-                    <div class="card" id="vp">
-                        <div class="top"> <img class="pfp" src="imgs/kim.jpg" alt="kimberly-gilot"></div>
-                        <div class="bottom">
-                            <h4 class="name">Kimberly Gilot</h4>
-                            <p class="title"> Vice President</p>
-                        </div>
-                    </div>
-                    <div class="card" id="secretary">
-                        <div class="top"> <img class="pfp" src="imgs/jecenia2.jpg" alt="jecenia-carcamo"></div>
-                        <div class="bottom">
-                            <h4 class="name">Jecenia Carcamo</h4>
-                            <p class="title">Secretary</p>
-                        </div>
-                    </div>
-                    <div class="card" id="treasurer">
-                        <div class="top"><img class="pfp" src="imgs/angel.jpg" alt="angel-lee"></div>
+        <div class="officers">
 
-                        <div class="bottom">
-                            <h4 class="name">Angel Lee</h4>
-                            <p class="title">Treasurer</p>
-                        </div>
-                    </div>
-                    <div class="card" id="public-rel">
-                        <div class="top"><img class="pfp" src="imgs/raymond.jpg" alt="luigia-than"></div>
-                        <div class="bottom">
-                            <h4 class="name">Luigia Than</h4>
-                            <p class="title">Public Relations</p>
-                        </div>
-                    </div>
-                    <div class="card" id="historian">
-                        <div class="top">
-                            <img class="pfp" src="imgs/johnny2.jpg" alt="shih-bin- tsao"></div>
-
-                        <div class="bottom">
-                            <h4 class="name">Shih Bin Tsao</h4>
-                            <p class="title">Historian</p>
-                        </div>
-                    </div>
-                    <div class="card" id="labmananger">
-                        <div class="top">
-                            <img class="pfp" src="imgs/raymond.jpg" alt="president">
-                        </div>
-                        <div class="bottom">
-                            <h4 class="name">Benjamin Huang</h4>
-                            <p class="title">Financial Coordinator</p>
-                        </div>
-                    </div>
-                    <div class="card" id="webmaster">
-                        <div class="top"><img class="pfp" src="imgs/raymond2.jpg" alt="raymond-li"></div>
-                        <div class="bottom">
-                            <h4 class="name">Raymond Li</h4>
-                            <p class="title">Dungeon Master</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
         </div>
 
-        <!--END OFFICIERS-->
+        <!--END OFFICERS-->
 
-        <div class="sectionC-bg">
-            <div class="container" id="events">
-                <div class="sectionC">
-                    <h1 class="event-header">upcoming events</h1>
-                    <div class="calendar-container">
-                        <iframe src="https://calendar.google.com/calendar/embed?src=2ircbecqi9s6v2400tp0lqian4%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-                    </div>
-                </div>
-            </div>
+        <div class="events">
+
         </div>
-       
+
         <!--END EVENTS-->
 
-        <div id="sectionLast-bg">
-            <div class="container">
-                <div class="sectionLast" id="contact">
-                    <h1>Connect with Us!</h1>
-                    <p class="socialmedia">
-                        <a href=""><i class="fas fa-envelope"></i></a>
-                        <a href="https://www.facebook.com/groups/139677328879/"><i class="fab fa-facebook"></i></a>
-                        <a href="https://github.com/IEEE-StonyBrook"><i class="fab fa-github"></i></a>
-                    </p>
+        <div class="memories">
 
-                    <h3 class="contact-header">contact</h3>
-                    <div class="info">
-                        <div class="location">
-                            <p>Stony Brook University <br> 100 Nicolls Road <br> Light Engineering Bldg Rm 175 <br> Stony Brook, NY 11794</p>
-                        </div>
-                        <p class="phone"></p>
-                        <a href="mailto:ieeesunysb@gmail.com" class="email">
-                            <i class="fas fa-envelope"></i>ieeesunysb@gmail.com
-                        </a>
-                    </div>
-
-                </div>
-            </div>
         </div>
+
+        <!--END MEMORIES-->
+
+        <div class="contact">
+
+        </div>
+
+        <!--END CONTACT-->
+
     </div>
-</body>
-</html>
-
-
-<!-- NOTE TO SELF - INCLUDE LAB HOURS -->
+</body></html>
