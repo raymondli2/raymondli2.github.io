@@ -31,32 +31,42 @@ header{
     width: 95%;
     margin: auto;
     display: flex;
+    position: relative;
 }
 
 .logo{
-    float: right;
+    float: left;
     color: #000;
     padding-top: 4px;
 }
 
 header ul{
     margin-left: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 8px;
 }
 
 header ul li{
     margin: auto;
-    padding: 10px 10px 10px 0;
+    padding: 0 10px 0 0;
     float: left;
 }
 
 header ul li a{
     color: #000;
+    opacity: 0.5;
     font-size: 0.9em;
     font-family: 'Raleway', sans-serif;
 }
 
 header ul li a:hover{
     opacity: 1;
+}
+
+.btn a{
+    color: #FFF;
 }
 
 /*LANDING PAGE*/
@@ -110,13 +120,13 @@ header ul li a:hover{
 
 /*ABOUT US*/
 
-.grid-container{
+.aboutus-grid-container{
     background: url(imgs/aboutus.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    min-height: 800px;
+    min-height: 900px;
     display: grid;
     grid-template-rows: 10% 10% 60% 20%;
     grid-template-columns: 10% 80% 10%;
@@ -145,7 +155,7 @@ header ul li a:hover{
 
 .about p{
     font-size: 1.2em;
-    margin-top: 5px;
+    margin-top: 15px;
     color: #FFF;
     min-width: 400px;
 }
@@ -160,19 +170,104 @@ header ul li a:hover{
     padding-top: 20px;
 }
 
-.mission-content{
+.sub-content{
+    padding-top: 10px;
     padding-left: 10px;
+}
+
+.mission-content{
     border-top: 3px solid #FFABAB;
 }
 
 .vision-content{
-    padding-left: 10px;
     border-top: 3px solid #6EB5FF;
 }
 
 .aboutus-content{
-    padding-left: 10px;
     border-top: 3px solid #C5A3FF;
 }
 
+/*OFFICERS*/
+.officers-grid-container{
+    display: grid;
+    height: 100vh;
+    min-height: 900px;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
 
+.officers{
+    height: 100%;
+    background-color: #FFF;
+}
+
+.section-title-a{
+    align-self: center;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: 1000;
+    letter-spacing: 2px;
+}
+
+.card{
+    max-height: 250px;
+    min-height: 250px;
+    max-width: 500px;
+    display: flex;
+    box-shadow: 5px 10px 8px;
+}
+
+.card p{
+    color: #FFF;
+}
+
+.card-img{
+    height: 250px;
+    width: auto;
+}
+
+.card-content{
+    background-color: #282828;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.name{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #FFABAB;
+    width: 60%;
+    margin: auto;
+    font-weight: 1000;
+}
+
+.position{
+    padding-top: 5px;
+    letter-spacing: 1px;
+    font-weight: 1000;
+    color: rgba(0, 0, 0, 0.541);
+}
+
+.personal-text{
+    padding-top: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.card-links{
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    left: 50%;
+    margin-left: -55px;
+}
+
+.card-links a{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #FFF;
+}
