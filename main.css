@@ -195,8 +195,9 @@ header ul li a:hover{
     width: 80%;
     margin: auto;
     padding-top: 50px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
 }
 
 .officers{
@@ -214,19 +215,16 @@ header ul li a:hover{
 
 .card{
     max-height: 250px;
-    min-height: 250px;
     max-width: 500px;
     display: flex;
-    box-shadow: 5px 10px 8px;
-}
-
-.card p{
-    color: #FFF;
+    box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.452);
+    position: relative;
 }
 
 .card-img{
     height: 250px;
     width: auto;
+    object-fit: cover;
 }
 
 .card-content{
@@ -237,6 +235,7 @@ header ul li a:hover{
 }
 
 .name{
+    color: #FFF;
     padding-top: 10px;
     padding-bottom: 5px;
     border-bottom: 3px solid #FFABAB;
@@ -246,13 +245,14 @@ header ul li a:hover{
 }
 
 .position{
+    color: #FFF;
     padding-top: 5px;
     letter-spacing: 1px;
     font-weight: 1000;
-    color: rgba(0, 0, 0, 0.541);
 }
 
 .personal-text{
+    color: rgba(255, 255, 255, 0.534);
     padding-top: 10px;
     width: 80%;
     margin: auto;
@@ -271,3 +271,54 @@ header ul li a:hover{
     padding-right: 20px;
     color: #FFF;
 }
+
+@media(max-width: 1263px){
+    .officers-grid-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        margin: 20px 0;
+    }
+}
+
+/*EVENTS*/
+
+.upcoming{
+    height: 100vh;
+}
+
+.section-title-events{
+    padding-top: 120px;
+}
+
+.calendar{
+    display: block; /*because iframe is an inline element*/
+    padding-top: 10px;
+    margin: auto;
+}
+
+/*MEMORIES*/
+
+
+/*CONTACT*/
+.contact{
+    height: 50vh;
+    background-color: #000;
+}
+
+.contact-content{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: #FFF;
+}
+
+
+
+
+
+
+
