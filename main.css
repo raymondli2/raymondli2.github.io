@@ -305,17 +305,50 @@ header ul li a:hover{
 
 /*CONTACT*/
 .contact{
-    height: 50vh;
-    background-color: #000;
+    height: 25vh;
+    background-color: #1a1a1a;
+    border-top: 5px solid #6EB5FF;
+    position: relative;
+}
+
+.section-title-contact{
+    text-transform: uppercase;
 }
 
 .contact-content{
     width: 80%;
+    padding-top: 30px;
     margin: auto;
-    text-align: center;
     color: #FFF;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.contact-content-sub{
+    display: flex;
+    padding: 10px 0;
+}
+
+.contact-content-sub i{
+    padding-right: 10px;
+}
+
+.contact-links{
+    position: absolute;
+    bottom: 15px;
+}
+
+.contact-links li{
+     float: left;
+     padding: 0 10px;
+}
+
+.contact-links li a{
+    color: white;
+    font-size: 1.2em;
+}
 
 
 
