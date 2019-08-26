@@ -192,7 +192,7 @@ header ul li a:hover{
     display: grid;
     height: 100vh;
     min-height: 900px;
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding-top: 50px;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
