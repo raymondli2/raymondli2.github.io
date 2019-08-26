@@ -192,7 +192,7 @@ header ul li a:hover{
     display: grid;
     height: 100vh;
     min-height: 900px;
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding-top: 50px;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -273,15 +273,7 @@ header ul li a:hover{
 }
 
 @media(max-width: 1263px){
-    .officers-grid-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card{
-        margin: 20px 0;
-    }
+    
 }
 
 /*EVENTS*/
