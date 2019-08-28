@@ -95,6 +95,8 @@ header ul li a:hover{
     color: white;
     text-align: center;
     max-width: 600px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
 }
 
 .landing-content .desc{
@@ -103,7 +105,7 @@ header ul li a:hover{
     font-size: 1.2em;
     max-width: 700px;
     padding: 10px;
-
+    font-family: 'Raleway', sans-serif;
 }
 
 .landing-content .btn{
@@ -264,17 +266,29 @@ header ul li a:hover{
 /*EVENTS*/
 
 .upcoming{
-    height: 100vh;
+    width: 80%;
+    margin: auto;
 }
 
 .section-title-events{
     padding-top: 120px;
 }
 
-.calendar{
-    display: block; /*because iframe is an inline element*/
-    padding-top: 10px;
+.calendar-container{
+    padding-top: 56.25%;
+    overflow: hidden;
     margin: auto;
+    position: relative;
+}
+
+.calendar{
+    border: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding-bottom: 100px;
 }
 
 /*MEMORIES*/
@@ -282,7 +296,7 @@ header ul li a:hover{
 
 /*CONTACT*/
 .contact{
-    height: 25vh;
+    height: 200px;
     background-color: #1a1a1a;
     border-top: 5px solid #6EB5FF;
     position: relative;
