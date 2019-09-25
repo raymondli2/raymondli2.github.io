@@ -133,6 +133,7 @@ header ul li a:hover{
     display: grid;
     grid-template-rows: 10% 10% 60% 20%;
     grid-template-columns: 10% 80% 10%;
+    
     grid-template-areas:
         ".       .       ."
         ". section-title ."
@@ -143,7 +144,6 @@ header ul li a:hover{
 .section-title{
     grid-area: section-title;
     font-family: 'Raleway', sans-serif;
-    text-align: center;
     font-weight: 1000;
     letter-spacing: 2px;
     color: #FFF;
@@ -153,7 +153,6 @@ header ul li a:hover{
     grid-area: about;
     width: 60%;
     max-width: 600px;
-    background-color: 
 }
 
 .about p{
@@ -351,10 +350,6 @@ header ul li a:hover{
     background-repeat: no-repeat;
 }
 
-.mem-card-4 a{
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
 .mem-card-5{
     background: url(imgs/Memories/pcb_banner.jpg);
     background-position: center;
@@ -366,9 +361,14 @@ header ul li a:hover{
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center; 
-    background-color: rgba(0, 0, 0, 0.5);
-    Color: white;
+    background-color: rgba(0, 0, 0, 0.767);
+    Color: #fff;
+    opacity: .8;
     font-weight: 900;   
+}
+
+.mem-card p:hover{
+    opacity: 1;
 }
 
 @media (max-width: 840px){
