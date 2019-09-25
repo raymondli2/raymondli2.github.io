@@ -128,12 +128,14 @@ header ul li a:hover{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    padding-top: 50px;
+
     height: 100vh;
     min-height: 900px;
     display: grid;
     grid-template-rows: 10% 10% 60% 20%;
     grid-template-columns: 10% 80% 10%;
-    
     grid-template-areas:
         ".       .       ."
         ". section-title ."
@@ -301,6 +303,7 @@ header ul li a:hover{
 /*MEMORIES*/
 .memories{
     height: 100vh;
+    padding-top: 50px;
     min-height: 700px;
 }
 
